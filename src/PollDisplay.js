@@ -5,7 +5,6 @@ import { getPolls } from "../helper/coreapicalls";
 const MainPoll = () => {
   const [polls, setPoll] = useState([]);
   const [error, seterror] = useState(false);
-  // Setting answers to state to reload the component with each vote
   const [pollAnswers, setPollAnswers] = useState([]);
 
   useEffect(() => {
@@ -23,8 +22,6 @@ const MainPoll = () => {
     });
   };
 
-  // Handling user vote
-  // Increments the votes count of answer when the user votes
 
   return (
     <div className="">
